@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt('Enter string: ');
+var cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+let isPalin = true;
+for (let i = 0; i < cleanStr.length / 2; i++) {
+  if (cleanStr[i] !== cleanStr[cleanStr.length - 1 - i]) {
+    isPalin = false;
+    break;
+  }
+}
+console.log(isPalin);
+    </script>
+</body>
+</html>
